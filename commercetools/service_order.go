@@ -342,13 +342,13 @@ func (client *Client) OrderEditUpdateWithKey(ctx context.Context, input *OrderEd
 }
 
 // OrderEditApply for type OrderEditApply
-func (client *Client) OrderEditApply(ctx context.Context, value *OrderEditApply, opts ...RequestOption) (result *OrderEdit, err error) {
+func (client *Client) OrderEditApply(ctx context.Context, id string, value *OrderEditApply, opts ...RequestOption) (result *OrderEdit, err error) {
 	params := url.Values{}
 	for _, opt := range opts {
 		opt(&params)
 	}
 
-	endpoint := "orders/edits/apply"
+	endpoint := fmt.Sprintf("orders/edits/%s/apply", id)
 	err = client.create(ctx, endpoint, params, value, &result)
 	if err != nil {
 		return nil, err
