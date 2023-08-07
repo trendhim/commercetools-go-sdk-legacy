@@ -1929,6 +1929,7 @@ type LineItem struct {
 	ProductType                *ProductTypeReference                `json:"productType"`
 	ProductSlug                *LocalizedString                     `json:"productSlug,omitempty"`
 	ProductID                  string                               `json:"productId"`
+	ProductKey                 string                               `json:"productKey"`
 	PriceMode                  LineItemPriceMode                    `json:"priceMode"`
 	Price                      *Price                               `json:"price"`
 	Name                       *LocalizedString                     `json:"name"`
