@@ -3,7 +3,7 @@ package commercetools_test
 import (
 	"time"
 
-	"github.com/labd/commercetools-go-sdk/commercetools"
+	"github.com/trendhim/commercetools-go-sdk-legacy/commercetools"
 )
 
 func createExampleProduct() *commercetools.Product {

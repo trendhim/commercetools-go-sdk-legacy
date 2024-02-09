@@ -1,3 +1,6 @@
+# Legacy SDK with Trendhim specific changes
+It's not maintained, and only here to simplify our own migration towards the latest labd release.
+
 # commercetools-go-sdk
 
 [![Build Status](https://github.com/labd/commercetools-go-sdk/workflows/Go%20Tests/badge.svg)](https://github.com/labd/commercetools-go-sdk/workflows/)

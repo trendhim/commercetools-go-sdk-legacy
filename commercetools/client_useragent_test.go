@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/labd/commercetools-go-sdk/commercetools"
+	"github.com/trendhim/commercetools-go-sdk-legacy/commercetools"
 	"github.com/stretchr/testify/assert"
 )
 

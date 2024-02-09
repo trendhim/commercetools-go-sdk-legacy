@@ -9,8 +9,8 @@ import (
 	"github.com/iancoleman/strcase"
 )
 
-const pkgCommercetools = "github.com/labd/commercetools-go-sdk/commercetools"
-const pkgTestUtil = "github.com/labd/commercetools-go-sdk/testutil"
+const pkgCommercetools = "github.com/trendhim/commercetools-go-sdk-legacy/commercetools"
+const pkgTestUtil = "github.com/trendhim/commercetools-go-sdk-legacy/testutil"
 const pkgAssert = "github.com/stretchr/testify/assert"
 
 // Entry point to generate services
@@ -46,8 +46,8 @@ func generateTests(objects []RamlType, resources []ServiceDomain) {
 		f := jen.NewFile("commercetools_test")
 		f.HeaderComment("Automatically generated, do not edit")
 		f.ImportName("github.com/stretchr/testify/assert", "assert")
-		f.ImportName("github.com/labd/commercetools-go-sdk/commercetools", "commercetools")
-		f.ImportName("github.com/labd/commercetools-go-sdk/testutil", "testutil")
+		f.ImportName("github.com/trendhim/commercetools-go-sdk-legacy/commercetools", "commercetools")
+		f.ImportName("github.com/trendhim/commercetools-go-sdk-legacy/testutil", "testutil")
 
 		contextNames, resourceMethods := orderServiceMethods(&resourceService, objectsMap)
 		for _, contextName := range contextNames {
@@ -179,7 +179,7 @@ func generateTestsDelete(method ServiceMethod, objects map[string]RamlType) (cod
 }
 
 func generateTestsQuery(method ServiceMethod, objects map[string]RamlType) (code *jen.Statement) {
-	const pkgTestUtil = "github.com/labd/commercetools-go-sdk/testutil"
+	const pkgTestUtil = "github.com/trendhim/commercetools-go-sdk-legacy/testutil"
 	const pkgAssert = "github.com/stretchr/testify/assert"
 
 	methodParams := jen.List(

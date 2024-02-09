@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/labd/commercetools-go-sdk/commercetools"
+	"github.com/trendhim/commercetools-go-sdk-legacy/commercetools"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/labd/commercetools-go-sdk/testutil"
+	"github.com/trendhim/commercetools-go-sdk-legacy/testutil"
 )
 
 func TestAPIClientCreate(t *testing.T) {

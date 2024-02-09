@@ -1,4 +1,4 @@
-module github.com/labd/commercetools-go-sdk
+module github.com/trendhim/commercetools-go-sdk-legacy
 
 go 1.14
 

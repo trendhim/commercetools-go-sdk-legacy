@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/labd/commercetools-go-sdk/commercetools"
-	"github.com/labd/commercetools-go-sdk/testutil"
+	"github.com/trendhim/commercetools-go-sdk-legacy/commercetools"
+	"github.com/trendhim/commercetools-go-sdk-legacy/testutil"
 	"github.com/stretchr/testify/assert"
 )
 
